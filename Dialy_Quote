@@ -1,0 +1,13 @@
+import requests
+from datetime import datetime
+
+# Fetch a random quote
+response = requests.get("https://api.quotable.io/random")
+quote = response.json()["content"]
+
+# Prepare the content to commit
+file_content = f"Quote of the day ({datetime.now().strftime('%Y-%m-%d')}):\n\n{quote}\n"
+
+# Save it to a file
+with open("daily_quote.txt", "w") as file:
+    file.write(file_content)
