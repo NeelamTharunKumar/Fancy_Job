@@ -2,7 +2,7 @@ import requests
 from datetime import datetime
 
 # Fetch a random quote
-response = requests.get("https://zenquotes.io/api/image")
+response = requests.get("https://zenquotes.io/api/random")
 quote = response.json()["content"]
 
 # Prepare the content to commit
