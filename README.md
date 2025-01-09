@@ -3,7 +3,7 @@
 A simple automation project that ensures daily commits on GitHub while sharing a motivational quote every day. This helps maintain your GitHub streak with minimal effort!
 
 ## Features ✨
-- Fetches a random motivational quote daily from the [ZenQuotes API]((https://zenquotes.io/api/today ))..
+- Fetches a random motivational quote daily from the [ZenQuotes API](https://zenquotes.io/api/image)..
 - Automatically commits the quote to your GitHub repository.
 - Uses GitHub Actions to run the process daily.
 
